@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily list, built with the rules</title>
+<meta name="description" content="The rep&#x27;s daily list of meetings with the agent&#x27;s proposals in their own column, real-looking data, four states, approve with undo.">
+<link rel="canonical" href="https://benyoumen.github.io/no-slop-design/daily-list.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daily list, built with the rules">
+<meta property="og:description" content="The rep&#x27;s daily list of meetings with the agent&#x27;s proposals in their own column, real-looking data, four states, approve with undo.">
+<meta property="og:url" content="https://benyoumen.github.io/no-slop-design/daily-list.html">
+<meta property="og:image" content="https://benyoumen.github.io/no-slop-design/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="screens.css">
+</head>
+<body class="screen">
+<div class="frame" role="region" aria-label="Gallery frame"><a class="frame-home" href="index.html">No-slop design</a><span class="frame-label">Daily list: Built with the rules</span><a class="frame-twin" href="daily-list-generic.html">See the generic version</a><a class="frame-repo" href="https://github.com/Benyoumen/no-slop-design">GitHub</a></div>
+
+<header class="app-header">
+  <div class="app-id"><span class="app-name">Acme Field Sales Assistant</span><span class="app-user">Ana</span></div>
+  <p class="app-date">Monday, 13 April 2026</p>
+  <p class="presence" id="presence">Agent ran at 07:05: <span class="num" id="presence-count">5</span> proposals from today's notes.</p>
+</header>
+<div class="switcher" role="group" aria-label="Mockup state">
+  <span class="switcher-label">Mockup state</span>
+  <button type="button" class="btn btn-quiet is-on" data-state="normal" aria-pressed="true">Normal</button>
+  <button type="button" class="btn btn-quiet" data-state="empty" aria-pressed="false">Empty</button>
+  <button type="button" class="btn btn-quiet" data-state="loading" aria-pressed="false">Loading</button>
+  <button type="button" class="btn btn-quiet" data-state="error" aria-pressed="false">Error</button>
+</div>
+<main class="app" id="app" data-state="normal">
+  <section class="kpis" aria-label="Today in numbers">
+    <div class="kpi"><p class="label">Meetings today</p><p class="value" id="kpi-meetings">7</p><p class="reading">1 already updated in the CRM</p></div>
+    <div class="kpi"><p class="label">Proposals waiting</p><p class="value" id="kpi-waiting">5</p><p class="reading">from today's notes, run of 07:05</p></div>
+    <div class="kpi"><p class="label">Updated within 24 hours</p><p class="value">74%</p><p class="reading">your last 4 weeks, team target 90%</p></div>
+  </section>
+
+  <div class="only-error notice notice-danger" role="alert">
+    <strong>CRM sync failed at 07:05.</strong> The list shows yesterday's data. The agent will retry at 07:35, or
+    <button type="button" class="link" data-state="normal">retry now</button>.
+  </div>
+
+  <section class="block only-normal only-error" aria-labelledby="h-today">
+    <h2 id="h-today">Today</h2>
+    <table class="table list">
+      <thead><tr><th scope="col">Time</th><th scope="col">Customer</th><th scope="col">Stage, recorded</th><th scope="col">Amount, recorded</th><th scope="col">Agent proposes</th><th scope="col"><span class="visually-hidden">Actions</span></th></tr></thead>
+      <tbody id="today-rows"><tr id="row-M-1041" data-pending="1"><td class="num">08:30</td><td><strong>Northwind Logistics</strong><br><span class="muted">Operations director</span></td><td>Proposal</td><td><span class="num">$24,000</span></td><td class="col-proposal"><div class="proposal" id="prop-M-1041"><p class="proposal-tag">Agent proposes</p><p class="proposal-value">Stage: Proposal to <strong>Negotiation</strong></p><p class="proposal-evidence">"Send the revised pricing and we take it to the board on Thursday." <span class="muted">at 00:41 in the notes</span></p><p class="proposal-draft"><a href="proposal-review.html">Follow-up email draft ready, not sent</a></p></div><div class="result" id="result-M-1041" hidden></div></td><td class="col-actions"><button type="button" class="btn btn-primary" data-approve="M-1041">Save to CRM</button> <button type="button" class="btn btn-quiet" data-later="M-1041">Not now</button> <a class="row-link" href="proposal-review.html">Open in CRM</a></td></tr><tr id="row-M-1042" data-pending="1"><td class="num">10:00</td><td><strong>Harbor Foods</strong><br><span class="muted">Purchasing lead</span></td><td>Discovery</td><td><span class="muted">no data</span></td><td class="col-proposal"><div class="proposal" id="prop-M-1042"><p class="proposal-tag">Agent proposes</p><p class="proposal-value">Next step: <strong>Site visit on 2026-04-21</strong></p><p class="proposal-evidence">"Come see the cold room; the numbers only make sense on site." <span class="muted">at 00:12 in the notes</span></p><p class="proposal-draft"><a href="proposal-review.html">Follow-up email draft ready, not sent</a></p></div><div class="result" id="result-M-1042" hidden></div></td><td class="col-actions"><button type="button" class="btn btn-primary" data-approve="M-1042">Save to CRM</button> <button type="button" class="btn btn-quiet" data-later="M-1042">Not now</button> <a class="row-link" href="proposal-review.html">Open in CRM</a></td></tr><tr id="row-M-1043" data-pending="0"><td class="num">11:30</td><td><strong>Cobalt Dental</strong><br><span class="muted">Practice owner</span></td><td>Closed won</td><td><span class="num">$8,500</span></td><td class="col-proposal"><p class="muted">Updated after the meeting</p></td><td class="col-actions"><a class="row-link" href="proposal-review.html">Open in CRM</a></td></tr><tr id="row-M-1044" data-pending="1"><td class="num">13:00</td><td><strong>Meridian Clinics</strong><br><span class="muted">Clinic manager</span></td><td>Proposal</td><td><span class="num">$41,000</span></td><td class="col-proposal"><div class="proposal" id="prop-M-1044"><p class="proposal-tag">Agent proposes</p><p class="proposal-value">Note: <strong>Decision delayed to May; budget review in progress</strong></p><p class="proposal-evidence">"Nothing moves before the budget review in May." <span class="muted">at 00:27 in the notes</span></p></div><div class="result" id="result-M-1044" hidden></div></td><td class="col-actions"><button type="button" class="btn btn-primary" data-approve="M-1044">Save to CRM</button> <button type="button" class="btn btn-quiet" data-later="M-1044">Not now</button> <a class="row-link" href="proposal-review.html">Open in CRM</a></td></tr><tr id="row-M-1045" data-pending="1"><td class="num">14:30</td><td><strong>Juniper Hotels</strong><br><span class="muted">Regional manager</span></td><td>Negotiation</td><td><span class="num">$63,000</span></td><td class="col-proposal"><div class="proposal" id="prop-M-1045"><p class="proposal-tag">Agent proposes</p><p class="proposal-value">Stage: Negotiation to <strong>Closed won</strong></p><p class="proposal-evidence">"We sign next week if the onboarding date holds." <span class="muted">at 00:55 in the notes</span></p><p class="proposal-draft"><a href="proposal-review.html">Follow-up email draft ready, not sent</a></p></div><div class="result" id="result-M-1045" hidden></div></td><td class="col-actions"><button type="button" class="btn btn-primary" data-approve="M-1045">Save to CRM</button> <button type="button" class="btn btn-quiet" data-later="M-1045">Not now</button> <a class="row-link" href="proposal-review.html">Open in CRM</a></td></tr><tr id="row-M-1046" data-pending="0"><td class="num">16:00</td><td><strong>Larkspur Energy</strong><br><span class="muted">Procurement analyst</span></td><td><span class="muted">no data</span></td><td><span class="num">$12,000</span></td><td class="col-proposal"><p class="muted">Nothing to propose: no notes for this meeting yet</p></td><td class="col-actions"><a class="row-link" href="proposal-review.html">Open in CRM</a></td></tr><tr id="row-M-1047" data-pending="1"><td class="num">17:00</td><td><strong>Oakline Furniture</strong><br><span class="muted">Owner</span></td><td>Discovery</td><td><span class="muted">no data</span></td><td class="col-proposal"><div class="proposal" id="prop-M-1047"><p class="proposal-tag">Agent proposes</p><p class="proposal-value">Next step: <strong>Send the catalog with trade prices</strong></p><p class="proposal-evidence">"Send me the trade price list and I will compare." <span class="muted">at 00:09 in the notes</span></p><p class="proposal-draft"><a href="proposal-review.html">Follow-up email draft ready, not sent</a></p></div><div class="result" id="result-M-1047" hidden></div></td><td class="col-actions"><button type="button" class="btn btn-primary" data-approve="M-1047">Save to CRM</button> <button type="button" class="btn btn-quiet" data-later="M-1047">Not now</button> <a class="row-link" href="proposal-review.html">Open in CRM</a></td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="block only-normal only-error" aria-labelledby="h-earlier">
+    <h2 id="h-earlier">Earlier this week, not yet updated</h2>
+    <table class="table list">
+      <thead><tr><th scope="col">Date</th><th scope="col">Customer</th><th scope="col">Stage, recorded</th><th scope="col">Amount, recorded</th><th scope="col">Agent proposes</th><th scope="col"><span class="visually-hidden">Actions</span></th></tr></thead>
+      <tbody><tr><td class="num">Thu 2 Apr</td><td><strong>Marlow and Sons</strong><br><span class="muted">Managing partner</span></td><td>Proposal</td><td><span class="num">$15,000</span></td><td><span class="muted">No notes for this meeting; nothing to propose</span></td><td class="col-actions"><a class="row-link" href="proposal-review.html">Open in CRM</a></td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="only-empty empty" aria-label="No meetings">
+    <h2>No meetings today</h2>
+    <p>Your next meeting is in your calendar. The agent reads the notes of each meeting and runs again tomorrow at 07:05.</p>
+    <p><a class="btn" href="weekly-summary.html">Open this week</a></p>
+  </section>
+
+  <section class="only-loading" aria-label="Loading" aria-busy="true">
+    <p class="muted">Syncing with the CRM, started 07:05.</p>
+    <div class="skeleton-rows"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+  </section>
+</main>
+
+<footer class="site-footer"><p>Fictional company, people and numbers.</p><p><a href="index.html">Gallery</a> · <a href="https://github.com/Benyoumen/no-slop-design">GitHub repository</a></p></footer>
+<script>
+(function(){
+  var app=document.getElementById('app');
+  document.querySelectorAll('[data-state]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var s=b.getAttribute('data-state'); app.setAttribute('data-state',s);
+      document.querySelectorAll('.switcher [data-state]').forEach(function(x){var on=x.getAttribute('data-state')===s;x.classList.toggle('is-on',on);x.setAttribute('aria-pressed',on?'true':'false');});
+    });
+  });
+  var waiting=document.getElementById('kpi-waiting'), presence=document.getElementById('presence-count');
+  function recount(){var n=document.querySelectorAll('#today-rows tr[data-pending="1"]').length; waiting.textContent=n; presence.textContent=n;}
+  var timers={};
+  function pad(n){return (n<10?'0':'')+n;}
+  document.querySelectorAll('[data-approve]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=b.getAttribute('data-approve'), row=document.getElementById('row-'+id), prop=document.getElementById('prop-'+id), res=document.getElementById('result-'+id);
+      var d=new Date(); var t=pad(d.getHours())+':'+pad(d.getMinutes());
+      prop.hidden=true; res.hidden=false; res.className='result notice notice-success';
+      res.innerHTML='Saved to CRM at '+t+'. <button type="button" class="link" data-undo="'+id+'">Undo</button> <span class="muted" id="undo-left-'+id+'">10 s</span>';
+      row.setAttribute('data-pending','0'); row.querySelector('.col-actions').hidden=true; recount();
+      var left=10; timers[id]=setInterval(function(){left--; var el=document.getElementById('undo-left-'+id); if(!el){clearInterval(timers[id]);return;} if(left<=0){clearInterval(timers[id]); res.innerHTML='Saved to CRM at '+t+'. <a class="row-link" href="proposal-review.html">See the record</a>';} else {el.textContent=left+' s';}},1000);
+      res.querySelector('[data-undo]').addEventListener('click',function(){clearInterval(timers[id]); res.hidden=true; prop.hidden=false; row.setAttribute('data-pending','1'); row.querySelector('.col-actions').hidden=false; recount(); b.focus();});
+      res.querySelector('[data-undo]').focus();
+    });
+  });
+  document.querySelectorAll('[data-later]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=b.getAttribute('data-later'), row=document.getElementById('row-'+id), prop=document.getElementById('prop-'+id), res=document.getElementById('result-'+id);
+      prop.hidden=true; res.hidden=false; res.className='result notice';
+      res.innerHTML='Kept for tomorrow. The proposal returns in tomorrow\'s list. <button type="button" class="link" data-back="'+id+'">Bring it back</button>';
+      row.setAttribute('data-pending','0'); row.querySelector('.col-actions').hidden=true; recount();
+      res.querySelector('[data-back]').addEventListener('click',function(){res.hidden=true; prop.hidden=false; row.setAttribute('data-pending','1'); row.querySelector('.col-actions').hidden=false; recount(); b.focus();});
+      res.querySelector('[data-back]').focus();
+    });
+  });
+})();
+</script>
+</body>
+</html>

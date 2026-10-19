@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposal review, built with the rules</title>
+<meta name="description" content="One proposed CRM update with its evidence from the meeting notes, approval with undo, and the trail of what the agent did before.">
+<link rel="canonical" href="https://benyoumen.github.io/no-slop-design/proposal-review.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Proposal review, built with the rules">
+<meta property="og:description" content="One proposed CRM update with its evidence from the meeting notes, approval with undo, and the trail of what the agent did before.">
+<meta property="og:url" content="https://benyoumen.github.io/no-slop-design/proposal-review.html">
+<meta property="og:image" content="https://benyoumen.github.io/no-slop-design/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="screens.css">
+</head>
+<body class="screen">
+<div class="frame" role="region" aria-label="Gallery frame"><a class="frame-home" href="index.html">No-slop design</a><span class="frame-label">Proposal review: Built with the rules</span><a class="frame-twin" href="proposal-review-generic.html">See the generic version</a><a class="frame-repo" href="https://github.com/Benyoumen/no-slop-design">GitHub</a></div>
+
+<header class="app-header">
+  <div class="app-id"><span class="app-name">Acme Field Sales Assistant</span><span class="app-user">Ana</span></div>
+  <p class="app-date"><a href="daily-list.html">Back to today</a></p>
+  <p class="presence">Agent ran at 07:05. Proposal from the notes of the 08:30 meeting.</p>
+</header>
+<main class="app app-narrow" id="app">
+  <section class="deal-head" aria-labelledby="h-deal">
+    <h1 id="h-deal">Northwind Logistics</h1>
+    <p class="muted">Operations director · meeting today at 08:30 · deal M-1041</p>
+  </section>
+
+  <section class="proposal-card" aria-labelledby="h-prop">
+    <p class="proposal-tag" id="h-prop">Agent proposes</p>
+    <table class="table changes">
+      <thead><tr><th scope="col">Field</th><th scope="col">Recorded in the CRM</th><th scope="col">Proposed</th></tr></thead>
+      <tbody>
+        <tr><td>Stage</td><td>Proposal</td><td><strong>Negotiation</strong></td></tr>
+        <tr><td>Next step</td><td><span class="muted">none recorded</span></td><td><strong>Send the revised pricing before Thursday</strong></td></tr>
+        <tr><td>Amount</td><td><span class="num">$24,000</span></td><td><span class="muted">unchanged</span></td></tr>
+      </tbody>
+    </table>
+    <h2>Based on</h2>
+    <ul class="evidence">
+      <li>"Send the revised pricing and we take it to the board on Thursday." <span class="muted">at 00:41 in the notes</span></li>
+      <li>"Thursday is the board; if the number works we move." <span class="muted">at 00:52 in the notes</span></li>
+    </ul>
+    <details class="draft">
+      <summary>Follow-up email draft, not sent</summary>
+      <p>Subject: Revised pricing for Thursday</p>
+      <p>Thank you for the time this morning. Attached is the revised pricing we discussed, with the onboarding date held at 5 May. I am available Wednesday if the board has questions before Thursday.</p>
+      <p class="muted">Saving to the CRM does not send this email. Sending is a separate step you take yourself.</p>
+    </details>
+    <div class="proposal-actions" id="actions">
+      <button type="button" class="btn btn-primary" id="approve">Save to CRM</button>
+      <button type="button" class="btn" id="edit">Edit the proposal</button>
+      <a class="row-link" href="#trail">What the agent did before</a>
+    </div>
+    <div class="result" id="result" hidden></div>
+    <p class="never"><strong>The agent will not:</strong> write to the CRM without your approval, change an amount it did not hear, or send the email.</p>
+  </section>
+
+  <section class="block" id="trail" aria-labelledby="h-trail">
+    <h2 id="h-trail">What the agent did, and who approved it</h2>
+    <table class="table">
+      <thead><tr><th scope="col">When</th><th scope="col">What</th><th scope="col">Deal</th><th scope="col">Approved by</th><th scope="col">Status</th></tr></thead>
+      <tbody id="trail-rows"><tr><td class="num">2026-04-13 07:06</td><td>Stage: Discovery to Proposal</td><td>Brightwater Farms</td><td>Ana</td><td><span class="state state-success">in the CRM</span></td></tr><tr><td class="num">2026-04-12 18:40</td><td>Next step: demo on 2026-04-17</td><td>Sable Analytics</td><td>Ana</td><td><span class="state state-success">in the CRM</span></td></tr><tr><td class="num">2026-04-12 18:38</td><td>Amount: 27,000 to 29,000</td><td>Sable Analytics</td><td>Ana</td><td><span class="state state-neutral">undone</span></td></tr><tr><td class="num">2026-04-10 17:55</td><td>Note: pricing questions answered</td><td>Kestrel Transport</td><td>Ana</td><td><span class="state state-success">in the CRM</span></td></tr></tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="site-footer"><p>Fictional company, people and numbers.</p><p><a href="index.html">Gallery</a> · <a href="https://github.com/Benyoumen/no-slop-design">GitHub repository</a></p></footer>
+<script>
+(function(){
+  var approve=document.getElementById('approve'), edit=document.getElementById('edit'), actions=document.getElementById('actions'), res=document.getElementById('result'), rows=document.getElementById('trail-rows');
+  function pad(n){return (n<10?'0':'')+n;}
+  var timer=null, added=null;
+  approve.addEventListener('click',function(){
+    var d=new Date(); var t=pad(d.getHours())+':'+pad(d.getMinutes());
+    actions.hidden=true; res.hidden=false; res.className='result notice notice-success';
+    res.innerHTML='Saved to CRM at '+t+': stage Negotiation, next step recorded. <button type="button" class="link" id="undo">Undo</button> <span class="muted" id="left">10 s</span>';
+    added=document.createElement('tr'); added.innerHTML='<td class="num">'+d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+' '+t+'</td><td>Stage: Proposal to Negotiation; next step</td><td>Northwind Logistics</td><td>Ana</td><td><span class="state state-success">in the CRM</span></td>';
+    rows.insertBefore(added, rows.firstChild);
+    var left=10; timer=setInterval(function(){left--; var el=document.getElementById('left'); if(!el){clearInterval(timer);return;} if(left<=0){clearInterval(timer); res.innerHTML='Saved to CRM at '+t+'. <a class="row-link" href="daily-list.html">Back to today</a>';} else {el.textContent=left+' s';}},1000);
+    document.getElementById('undo').addEventListener('click',function(){clearInterval(timer); res.hidden=true; actions.hidden=false; if(added){added.querySelector('td:last-child').innerHTML='<span class="state state-neutral">undone</span>';} approve.focus();});
+    document.getElementById('undo').focus();
+  });
+  edit.addEventListener('click',function(){
+    var cells=document.querySelectorAll('.changes tbody td:last-child strong');
+    cells.forEach(function(c){ if(c.getAttribute('contenteditable')) return; c.setAttribute('contenteditable','true'); c.classList.add('editing'); });
+    edit.textContent='Editing: change the proposed values, then save';
+    if(cells[0]) cells[0].focus();
+  });
+})();
+</script>
+</body>
+</html>

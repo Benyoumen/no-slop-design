@@ -1,0 +1,33 @@
+{
+  "snapshot_date": "2026-04-13",
+  "source": "CRM deals and meeting notes, anonymized. Fictional company, people and numbers.",
+  "reps": [
+    { "id": "ana", "name": "Ana", "weekly_meetings": 19, "updated_within_24h": 0.74 },
+    { "id": "bruno", "name": "Bruno", "weekly_meetings": 16, "updated_within_24h": 0.38 },
+    { "id": "carla", "name": "Carla", "weekly_meetings": 22, "updated_within_24h": 0.91 },
+    { "id": "diego", "name": "Diego", "weekly_meetings": 14, "updated_within_24h": null }
+  ],
+  "current_rep": "ana",
+  "last_agent_run": "2026-04-13T07:05:00",
+  "week": { "iso": "2026-W16", "start": "2026-04-13", "meetings": 71, "proposals_approved": 38, "proposals_pending": 11, "updated_within_24h": 0.68, "updated_within_24h_prev": 0.61 },
+  "meetings": [
+    { "id": "M-1041", "time": "08:30", "customer": "Northwind Logistics", "contact": "Operations director", "stage": "Proposal", "amount": 24000, "currency": "USD", "last_activity_days_before": 1, "proposal": { "kind": "stage", "from": "Proposal", "to": "Negotiation", "evidence": [ { "t": "00:41", "quote": "Send the revised pricing and we take it to the board on Thursday." } ], "email_draft": true }, "updated": false },
+    { "id": "M-1042", "time": "10:00", "customer": "Harbor Foods", "contact": "Purchasing lead", "stage": "Discovery", "amount": null, "currency": "USD", "last_activity_days_before": 0, "proposal": { "kind": "next_step", "from": null, "to": "Site visit on 2026-04-21", "evidence": [ { "t": "00:12", "quote": "Come see the cold room; the numbers only make sense on site." } ], "email_draft": true }, "updated": false },
+    { "id": "M-1043", "time": "11:30", "customer": "Cobalt Dental", "contact": "Practice owner", "stage": "Closed won", "amount": 8500, "currency": "USD", "last_activity_days_before": 3, "proposal": null, "updated": true },
+    { "id": "M-1044", "time": "13:00", "customer": "Meridian Clinics", "contact": "Clinic manager", "stage": "Proposal", "amount": 41000, "currency": "USD", "last_activity_days_before": 16, "proposal": { "kind": "note", "from": null, "to": "Decision delayed to May; budget review in progress", "evidence": [ { "t": "00:27", "quote": "Nothing moves before the budget review in May." } ], "email_draft": false }, "updated": false },
+    { "id": "M-1045", "time": "14:30", "customer": "Juniper Hotels", "contact": "Regional manager", "stage": "Negotiation", "amount": 63000, "currency": "USD", "last_activity_days_before": 2, "proposal": { "kind": "stage", "from": "Negotiation", "to": "Closed won", "evidence": [ { "t": "00:55", "quote": "We sign next week if the onboarding date holds." } ], "email_draft": true }, "updated": false },
+    { "id": "M-1046", "time": "16:00", "customer": "Larkspur Energy", "contact": "Procurement analyst", "stage": null, "amount": 12000, "currency": "USD", "last_activity_days_before": 21, "proposal": null, "updated": false },
+    { "id": "M-1047", "time": "17:00", "customer": "Oakline Furniture", "contact": "Owner", "stage": "Discovery", "amount": null, "currency": "USD", "last_activity_days_before": 5, "proposal": { "kind": "next_step", "from": null, "to": "Send the catalog with trade prices", "evidence": [ { "t": "00:09", "quote": "Send me the trade price list and I will compare." } ], "email_draft": true }, "updated": false },
+    { "id": "M-1038", "time": "2026-04-10", "customer": "Brightwater Farms", "contact": "Farm manager", "stage": "Proposal", "amount": 19500, "currency": "USD", "last_activity_days_before": 3, "proposal": null, "updated": true },
+    { "id": "M-1036", "time": "2026-04-09", "customer": "Sable Analytics", "contact": "Head of data", "stage": "Negotiation", "amount": 27000, "currency": "USD", "last_activity_days_before": 4, "proposal": null, "updated": true },
+    { "id": "M-1031", "time": "2026-04-07", "customer": "Kestrel Transport", "contact": "Fleet manager", "stage": "Discovery", "amount": null, "currency": "USD", "last_activity_days_before": 6, "proposal": null, "updated": true },
+    { "id": "M-1024", "time": "2026-04-02", "customer": "Marlow and Sons", "contact": "Managing partner", "stage": "Proposal", "amount": 15000, "currency": "USD", "last_activity_days_before": 18, "proposal": null, "updated": false },
+    { "id": "M-1019", "time": "2026-03-30", "customer": "Pinecrest Schools", "contact": "Facilities director", "stage": "Closed lost", "amount": 32000, "currency": "USD", "last_activity_days_before": 14, "proposal": null, "updated": true }
+  ],
+  "trail": [
+    { "when": "2026-04-13T07:06", "what": "Stage: Discovery to Proposal", "deal": "Brightwater Farms", "approved_by": "Ana", "undone": false },
+    { "when": "2026-04-12T18:40", "what": "Next step: demo on 2026-04-17", "deal": "Sable Analytics", "approved_by": "Ana", "undone": false },
+    { "when": "2026-04-12T18:38", "what": "Amount: 27,000 to 29,000", "deal": "Sable Analytics", "approved_by": "Ana", "undone": true },
+    { "when": "2026-04-10T17:55", "what": "Note: pricing questions answered", "deal": "Kestrel Transport", "approved_by": "Ana", "undone": false }
+  ]
+}

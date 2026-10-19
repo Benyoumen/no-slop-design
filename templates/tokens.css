@@ -1,0 +1,148 @@
+/* Design tokens starter. One file, every decision. Change values, keep names.
+   Measured with the WCAG formula (tools/build_gallery.py has no part in this; see the audit skill):
+   light: ink on paper 14.7:1, ink-70 on paper 6.1:1, accent-ink on accent 8.4:1, accent on paper 7.8:1,
+   success 5.8:1, warning 5.1:1, danger 6.1:1, neutral 6.2:1 on paper; ink-55 on paper 3.7:1, so
+   ink-55 is for large text (24px and up) and icons only, never body text.
+   dark: ink on paper 15.0:1, ink-70 on paper 8.3:1, accent-ink on accent 8.0:1, states 7.3:1 and above. */
+
+:root {
+  --font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-0: 13px;
+  --fs-1: 15px;
+  --fs-2: 18px;
+  --fs-3: 24px;
+  --fs-4: 32px;
+  --lh: 1.45;
+  --w-regular: 400;
+  --w-strong: 600;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+
+  --radius-1: 4px;
+  --radius-2: 8px;
+
+  --paper: #F5F6F8;
+  --surface: #FFFFFF;
+  --ink: #1C2230;
+  --ink-rgb: 28, 34, 48;
+  --ink-70: rgba(var(--ink-rgb), 0.72);
+  --ink-55: rgba(var(--ink-rgb), 0.56);
+  --ink-30: rgba(var(--ink-rgb), 0.30);
+  --ink-12: rgba(var(--ink-rgb), 0.12);
+  --ink-06: rgba(var(--ink-rgb), 0.06);
+
+  --accent: #2446A6;
+  --accent-ink: #FFFFFF;
+  --accent-soft: rgba(36, 70, 166, 0.10);
+
+  --success: #1B6E3F;
+  --warning: #9A5A00;
+  --danger: #B42318;
+  --neutral: #4F5D73;
+  --success-soft: rgba(27, 110, 63, 0.10);
+  --warning-soft: rgba(154, 90, 0, 0.10);
+  --danger-soft: rgba(180, 35, 24, 0.10);
+
+  --shadow-1: 0 8px 24px rgba(28, 34, 48, 0.16);
+  --focus: 0 0 0 2px var(--paper), 0 0 0 4px var(--accent);
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14181F;
+    --surface: #1B2029;
+    --ink: #E8ECF2;
+    --ink-rgb: 232, 236, 242;
+    --accent: #8FB0FF;
+    --accent-ink: #0E1A3A;
+    --accent-soft: rgba(143, 176, 255, 0.14);
+    --success: #5BC98A;
+    --warning: #E3A94F;
+    --danger: #F08A80;
+    --neutral: #A9B4C6;
+    --success-soft: rgba(91, 201, 138, 0.14);
+    --warning-soft: rgba(227, 169, 79, 0.14);
+    --danger-soft: rgba(240, 138, 128, 0.14);
+    --shadow-1: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #14181F;
+  --surface: #1B2029;
+  --ink: #E8ECF2;
+  --ink-rgb: 232, 236, 242;
+  --accent: #8FB0FF;
+  --accent-ink: #0E1A3A;
+  --accent-soft: rgba(143, 176, 255, 0.14);
+  --success: #5BC98A;
+  --warning: #E3A94F;
+  --danger: #F08A80;
+  --neutral: #A9B4C6;
+  --success-soft: rgba(91, 201, 138, 0.14);
+  --warning-soft: rgba(227, 169, 79, 0.14);
+  --danger-soft: rgba(240, 138, 128, 0.14);
+  --shadow-1: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Base */
+* { box-sizing: border-box; }
+html { font-family: var(--font); font-size: var(--fs-1); line-height: var(--lh); color: var(--ink); background: var(--paper); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); }
+h1, h2, h3 { margin: 0; font-weight: var(--w-strong); line-height: 1.25; }
+h1 { font-size: var(--fs-3); }
+h2 { font-size: var(--fs-2); }
+h3 { font-size: var(--fs-1); }
+p { margin: 0; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+small, .muted { color: var(--ink-70); }
+.num { font-variant-numeric: tabular-nums; }
+:focus-visible { outline: none; box-shadow: var(--focus); border-radius: var(--radius-1); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: var(--sp-2); min-height: 40px; padding: 0 var(--sp-4); border: 1px solid var(--ink-30); border-radius: var(--radius-1); background: var(--surface); color: var(--ink); font: inherit; font-weight: var(--w-strong); cursor: pointer; }
+.btn:hover { background: var(--ink-06); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn-primary:hover { filter: brightness(1.08); background: var(--accent); }
+.btn-quiet { border-color: transparent; background: transparent; font-weight: var(--w-regular); }
+.btn-quiet:hover { background: var(--ink-06); }
+.link { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+
+/* Inputs */
+.input, .select { min-height: 40px; padding: 0 var(--sp-3); border: 1px solid var(--ink-30); border-radius: var(--radius-1); background: var(--surface); color: var(--ink); font: inherit; }
+.label { display: block; font-size: var(--fs-0); color: var(--ink-70); margin-bottom: var(--sp-1); }
+
+/* Tables and cards */
+.table { width: 100%; border-collapse: collapse; }
+.table th { text-align: left; font-size: var(--fs-0); font-weight: var(--w-strong); color: var(--ink-70); padding: var(--sp-2) var(--sp-3); border-bottom: 1px solid var(--ink-12); }
+.table td { padding: var(--sp-3); border-bottom: 1px solid var(--ink-12); vertical-align: top; }
+.table tbody tr:hover { background: var(--ink-06); }
+.card { background: var(--surface); border: 1px solid var(--ink-12); border-radius: var(--radius-2); padding: var(--sp-4); }
+.floating { background: var(--surface); border-radius: var(--radius-2); box-shadow: var(--shadow-1); }
+
+/* KPI: label above, number, reading below */
+.kpi { display: grid; gap: var(--sp-1); }
+.kpi .label { margin: 0; }
+.kpi .value { font-size: var(--fs-4); font-weight: var(--w-strong); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.kpi .reading { font-size: var(--fs-0); color: var(--ink-70); }
+
+/* States: color means state */
+.state { display: inline-flex; align-items: center; gap: var(--sp-1); padding: 2px var(--sp-2); border-radius: var(--radius-1); font-size: var(--fs-0); font-weight: var(--w-strong); }
+.state-success { color: var(--success); background: var(--success-soft); }
+.state-warning { color: var(--warning); background: var(--warning-soft); }
+.state-danger { color: var(--danger); background: var(--danger-soft); }
+.state-neutral { color: var(--neutral); background: var(--ink-06); }
+.notice { padding: var(--sp-3) var(--sp-4); border-radius: var(--radius-2); border: 1px solid var(--ink-12); background: var(--surface); }
+.notice-success { border-color: var(--success); }
+.notice-danger { border-color: var(--danger); }
+.empty { padding: var(--sp-6); text-align: left; border: 1px dashed var(--ink-30); border-radius: var(--radius-2); color: var(--ink-70); }
+.skeleton { background: linear-gradient(90deg, var(--ink-06), var(--ink-12), var(--ink-06)); border-radius: var(--radius-1); min-height: 1em; }

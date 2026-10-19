@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No-slop design</title>
+<meta name="description" content="Visual AI slop is manageable. Three screens built with a small set of rules, each next to the generic version most tools would produce. Live pages, real-looking data, measured checks.">
+<link rel="canonical" href="https://benyoumen.github.io/no-slop-design/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="No-slop design">
+<meta property="og:description" content="Visual AI slop is manageable. Three screens built with a small set of rules, each next to the generic version most tools would produce. Live pages, real-looking data, measured checks.">
+<meta property="og:url" content="https://benyoumen.github.io/no-slop-design/index.html">
+<meta property="og:image" content="https://benyoumen.github.io/no-slop-design/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="gallery.css">
+</head>
+<body class="gallery">
+
+
+<header class="g-head">
+  <div class="g-head-inner">
+    <p class="site-name">No-slop design</p>
+    <h1>Visual AI slop is manageable.</h1>
+    <p class="lede">AI builds a screen in minutes, and the default result looks like every other AI screen. It costs credibility the moment a customer, a sponsor or a candidate opens it. Three screens for a fictional sales assistant, each built with a small set of rules, next to the version most tools would produce from the same brief. Both are live pages: open them, click, press Tab.</p>
+    <p class="actions"><a class="btn btn-primary" href="#pairs">See the screens</a> <a class="btn" href="https://github.com/Benyoumen/no-slop-design">The rules on GitHub</a></p>
+    <p class="muted">Fictional company, people and numbers. Snapshot of Monday, 13 April 2026. Every page is generated from the same data file by one script; nothing is edited by hand.</p>
+  </div>
+</header>
+<main class="g-body" id="pairs">
+
+<section class="pair" aria-labelledby="h-daily-list">
+  <div class="pair-head">
+    <h2 id="h-daily-list">The rep&#x27;s daily list</h2>
+    <p class="job">A field rep between two meetings, two minutes, laptop or phone: what do I owe the CRM today?</p>
+  </div>
+  <div class="pair-grid">
+    <figure class="shot">
+      <div class="preview" data-w="1280" data-h="800"><iframe src="daily-list.html" title="The rep&#x27;s daily list, built with the rules" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
+      <figcaption><a href="daily-list.html">Built with the rules</a> <span class="muted">opens the live page</span></figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="preview" data-w="1280" data-h="800"><iframe src="daily-list-generic.html" title="The rep&#x27;s daily list, the generic version" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
+      <figcaption><a href="daily-list-generic.html">The generic version</a> <span class="muted">most people would accept it</span></figcaption>
+    </figure>
+  </div>
+  <div class="notice-list">
+    <h3>What to notice <span class="muted">(numbers are the tells in the list)</span></h3>
+    <ul><li><span class="tell">1, 2, 6</span><span>No hero, no icon grid, nothing centered. The first thing on the screen is today&#x27;s meetings in time order, on real-looking data with its date.</span></li><li><span class="tell">7</span><span>Three amounts and one stage read &quot;no data&quot; because the CRM has none. The generic version rounds them to the nearest five thousand.</span></li><li><span class="tell">11</span><span>Empty, loading and error are one click away in the state switcher. The generic page has one state.</span></li><li><span class="tell">15</span><span>The button says what happens in the system: &quot;Save to CRM&quot;, with Undo for ten seconds. Not &quot;Approve&quot; with a check mark.</span></li><li><span class="tell">agent</span><span>The agent&#x27;s proposal sits in its own column with the quote it is based on. A proposal never shares a cell with a recorded fact.</span></li></ul>
+  </div>
+</section>
+
+<section class="pair" aria-labelledby="h-proposal-review">
+  <div class="pair-head">
+    <h2 id="h-proposal-review">One proposal, reviewed</h2>
+    <p class="job">The same rep decides whether to let the agent write a stage change and a next step into the CRM.</p>
+  </div>
+  <div class="pair-grid">
+    <figure class="shot">
+      <div class="preview" data-w="1280" data-h="800"><iframe src="proposal-review.html" title="One proposal, reviewed, built with the rules" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
+      <figcaption><a href="proposal-review.html">Built with the rules</a> <span class="muted">opens the live page</span></figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="preview" data-w="1280" data-h="800"><iframe src="proposal-review-generic.html" title="One proposal, reviewed, the generic version" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
+      <figcaption><a href="proposal-review-generic.html">The generic version</a> <span class="muted">most people would accept it</span></figcaption>
+    </figure>
+  </div>
+  <div class="notice-list">
+    <h3>What to notice <span class="muted">(numbers are the tells in the list)</span></h3>
+    <ul><li><span class="tell">4, 5</span><span>No &quot;heating up&quot;, no confidence score with no definition, no fire emoji. Recorded value next to proposed value, field by field.</span></li><li><span class="tell">agent</span><span>Evidence: the two sentences from the notes the proposal is based on, with their timestamps. The generic version asks for trust without showing why.</span></li><li><span class="tell">10</span><span>Two buttons, one link. Approve writes and shows Undo. Edit makes the proposed values editable in place. Reject is not a red button; &quot;Not now&quot; lives on the list.</span></li><li><span class="tell">agent</span><span>The trail at the bottom: what the agent did before, when, approved by whom, and one entry that was undone.</span></li><li><span class="tell">15</span><span>A short &quot;the agent will not&quot; line where the decision is made, not in a footer.</span></li></ul>
+  </div>
+</section>
+
+<section class="pair" aria-labelledby="h-weekly-summary">
+  <div class="pair-head">
+    <h2 id="h-weekly-summary">The manager&#x27;s week, on a phone</h2>
+    <p class="job">A sales manager on Friday afternoon, phone in hand: did my team update the CRM after their meetings, and who needs a call?</p>
+  </div>
+  <div class="pair-grid">
+    <figure class="shot">
+      <div class="preview" data-w="390" data-h="844"><iframe src="weekly-summary.html" title="The manager&#x27;s week, on a phone, built with the rules" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
+      <figcaption><a href="weekly-summary.html">Built with the rules</a> <span class="muted">opens the live page</span></figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="preview" data-w="390" data-h="844"><iframe src="weekly-summary-generic.html" title="The manager&#x27;s week, on a phone, the generic version" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
+      <figcaption><a href="weekly-summary-generic.html">The generic version</a> <span class="muted">most people would accept it</span></figcaption>
+    </figure>
+  </div>
+  <div class="notice-list">
+    <h3>What to notice <span class="muted">(numbers are the tells in the list)</span></h3>
+    <ul><li><span class="tell">1, 14</span><span>No health score, no medals, no confetti. One number with its label above and its reading below: last week, the change, the target.</span></li><li><span class="tell">7</span><span>One rep reads &quot;no data&quot; with the reason in one line. The generic version gives him a bronze medal and 40%.</span></li><li><span class="tell">12</span><span>The &quot;needs attention&quot; list is content-sized: days without activity, the recorded stage and amount, one link per deal.</span></li><li><span class="tell">6, 9</span><span>Left-aligned, one spacing scale, phone width first. Nothing is centered because nothing is a poster.</span></li><li><span class="tell">13</span><span>Every control is reachable with a keyboard and the focus is visible. Try Tab on both versions.</span></li></ul>
+  </div>
+</section>
+
+<section class="how" aria-labelledby="h-how">
+  <h2 id="h-how">How these were made</h2>
+  <ol class="how-list">
+    <li><strong>Real data, frozen.</strong> Twelve meetings and deals, anonymized, dated 13 April 2026. Three amounts and one stage are missing in the source, so the screens say so.</li>
+    <li><strong>One generator, never a hand edit.</strong> A single Python script reads the data and the tokens and writes every page here, including the generic twins.</li>
+    <li><strong>Measured, not squinted.</strong> Contrast on every text pair, two widths, keyboard reach, the four states. The tells list is the audit.</li>
+  </ol>
+  <p>The rules: <a href="https://github.com/Benyoumen/no-slop-design/blob/main/docs/visual-slop-tells.md">sixteen visual tells and what to do instead</a>. The workflow: <a href="https://github.com/Benyoumen/no-slop-design/blob/main/docs/mockup-first.md">from a brief to a validated decision in a thirty-minute session</a>. The skills: <a href="https://github.com/Benyoumen/no-slop-design/tree/main/skills">html-mockup, visual-slop-audit, visual-validation-session, design-tokens-starter</a>. The tokens behind every screen: <a href="https://github.com/Benyoumen/no-slop-design/blob/main/templates/tokens.css">tokens.css</a>.</p>
+</section>
+</main>
+
+<footer class="site-footer"><p>Fictional company, people and numbers.</p><p><a href="index.html">Gallery</a> · <a href="https://github.com/Benyoumen/no-slop-design">GitHub repository</a></p></footer>
+<script>
+(function(){
+  function fit(){
+    document.querySelectorAll('.preview').forEach(function(p){
+      var w=parseInt(p.getAttribute('data-w'),10), h=parseInt(p.getAttribute('data-h'),10);
+      var avail=p.clientWidth; var s=Math.min(1, avail/w);
+      if(w<500){ s=Math.min(s, 460/h); }
+      var f=p.querySelector('iframe'); f.style.width=w+'px'; f.style.height=h+'px'; f.style.transform='scale('+s+')';
+      p.style.height=Math.round(h*s)+'px';
+    });
+  }
+  fit(); window.addEventListener('resize', fit);
+})();
+</script>
+</body>
+</html>

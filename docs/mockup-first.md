@@ -46,6 +46,8 @@ Template: [`templates/validation-session-notes.md`](../templates/validation-sess
 
 Each decision is written as a line a developer and a coding agent can build from: what the screen shows, what the person can do, what the system writes, what it must never do. The lines go into the Feature or the User Story, with a link to the mockup and the session date. The mockup stays as the visual reference and keeps being regenerated as the data and the decisions change. When the built product diverges from it, one of the two is wrong, and the session notes say which.
 
+A complete worked example, from the brief to the session notes, with the data snapshot behind the live screens, is in [`examples/acme-realty/`](../examples/acme-realty).
+
 ## Why this works for agentic systems too
 
 An agent product has more to validate, not less: whether people understand what the agent did, whether they trust its proposal enough to approve it, and whether the trail is readable afterwards. A mockup with real records, a real proposal and an approval button answers all three in one session. The backlog method that takes the decisions from here is [backlog-writing-system](https://github.com/Benyoumen/backlog-writing-system); the UX rules for the agent's presence, proposals and trail are in [agent-design-principles](https://github.com/Benyoumen/agent-design-principles).

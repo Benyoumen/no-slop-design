@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home, built with the rules</title>
+<meta name="description" content="The broker&#x27;s day: a greeting with the snapshot&#x27;s time, a question box that answers only from the data, the agenda, the priorities the assistant proposes with their evidence, the tasks, and the week&#x27;s numbers with their sources.">
+<link rel="canonical" href="https://benyoumen.github.io/no-slop-design/home.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Home, built with the rules">
+<meta property="og:description" content="The broker&#x27;s day: a greeting with the snapshot&#x27;s time, a question box that answers only from the data, the agenda, the priorities the assistant proposes with their evidence, the tasks, and the week&#x27;s numbers with their sources.">
+<meta property="og:url" content="https://benyoumen.github.io/no-slop-design/home.html">
+<meta property="og:image" content="https://benyoumen.github.io/no-slop-design/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="screens.css">
+</head>
+<body class="screen">
+<div class="frame" role="region" aria-label="Gallery frame"><a class="frame-home" href="index.html">No-slop design</a><span class="frame-label">Home: Built with the rules</span><a class="frame-twin" href="home-generic.html">See the generic version</a><a class="frame-repo" href="https://github.com/Benyoumen/no-slop-design">GitHub</a></div>
+
+<div class="app">
+  <aside class="side">
+    <div class="side-top">
+      <div class="ws"><span class="ws-mk" aria-hidden="true"></span><span class="ws-t"><b>Acme Realty</b><span class="who">Marina Costa</span></span></div>
+      <form class="acct" role="search" aria-label="Find a person or a listing">
+        <label class="sr" for="find">Find a person or a listing</label>
+        <div class="acct-b"><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="find" class="acct-in" type="search" placeholder="Find a person or a listing" autocomplete="off"><kbd aria-hidden="true">/</kbd></div>
+      </form>
+    </div>
+    <nav class="nav" aria-label="Sections">
+      <div class="nav-g">Today</div><a class="nav-i on" href="home.html" aria-current="page"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span class="lb">Home</span></a><a class="nav-i" href="home.html#priorities"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="lb">Priorities</span></a><a class="nav-i" href="home.html#tasks"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5L20 7"/></svg><span class="lb">Tasks</span></a><div class="nav-g">Portfolio</div><a class="nav-i" href="portfolio-explore.html"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.5a5 5 0 0 1 6 5"/></svg><span class="lb">Portfolio</span></a><span class="nav-i is-mock" title="Not in this mockup"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 7l3 3M13 10l3 3"/></svg><span class="lb">Buyers</span><span class="nav-n">mock</span></span><span class="nav-i is-mock" title="Not in this mockup"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h3M13 7h3M8 11h3M13 11h3M8 15h3M13 15h3M10 21v-3h4v3"/></svg><span class="lb">Listings</span><span class="nav-n">mock</span></span><span class="nav-i is-mock" title="Not in this mockup"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="lb">Visits</span><span class="nav-n">mock</span></span><span class="nav-i is-mock" title="Not in this mockup"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h6"/></svg><span class="lb">Proposals</span><span class="nav-n">mock</span></span><span class="nav-i is-mock" title="Not in this mockup"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span class="lb">Forecast</span><span class="nav-n">mock</span></span>
+      <div class="nav-foot">
+        <span class="nav-i is-mock" title="Not in this mockup"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h6"/></svg><span class="lb">Sources</span></span>
+        <span class="nav-i is-mock" title="Not in this mockup"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg><span class="lb">Settings</span></span>
+      </div>
+    </nav>
+  </aside>
+  <div class="sheet">
+    <header class="hd">
+      <div class="hd-in">
+        <div class="job" role="status" aria-live="polite" id="job"><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5L20 7"/></svg><span class="job-t">Portfolio read</span><span class="job-s">done today at 07:40</span></div>
+        <span class="grow"></span>
+        <button type="button" class="b b-p" id="log-visit"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Log a visit</button>
+        <div class="umenu" id="umenu">
+          <button type="button" class="uav" id="umenubtn" aria-expanded="false" aria-controls="umenu-l" aria-label="Account of Marina Costa">MC</button>
+          <div class="pop" id="umenu-l" hidden>
+            <div class="pop-id"><span class="uav" aria-hidden="true">MC</span><span class="pop-idt"><span class="pop-nm">Marina Costa</span><span class="pop-org">Broker, launches and resale</span></span></div>
+            <button type="button" class="pi">Preferences<span class="sub">channel, daily summary, quiet hours</span></button>
+            <button type="button" class="pi">Sources<span class="sub">where every number on this screen comes from</span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="mn" id="main">
+      
+      
+<section class="ex" aria-labelledby="h-greet">
+  <h1 class="ex-t" id="h-greet">Good afternoon, Marina</h1>
+  <form class="cmp" id="ex-cmp" action="portfolio-explore.html" method="get">
+    <label class="sr" for="ex-in">Ask about your portfolio</label>
+    <textarea id="ex-in" rows="3" placeholder="Ask about a buyer, a listing or your week. The assistant answers only from the snapshot, with sources."></textarea>
+    <div class="cmp-b">
+      <span class="cmp-ctx" role="group" aria-label="Context"><button type="button" class="cmp-ctx-b"><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.5a5 5 0 0 1 6 5"/></svg>Whole portfolio</button></span>
+      <button type="button" class="cmp-ic" aria-label="Attach a document (not in this mockup)"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11l-9 9a5.5 5.5 0 0 1-8-8l9-9a3.5 3.5 0 0 1 5 5l-9 9a1.5 1.5 0 0 1-2-2l8-8"/></svg></button>
+      <button type="button" class="cmp-ic" aria-label="Dictate (not in this mockup)"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+      <span class="grow"></span>
+      <button type="submit" class="cmp-env" aria-label="Ask"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+    </div>
+  </form>
+  <section class="ex-sg" aria-labelledby="h-sg">
+    <h2 id="h-sg" class="ex-sgt">From your agenda</h2>
+    <ul class="sg-l"><li><a class="sg" href="portfolio-explore.html#q=none&amp;t=What%20should%20I%20prepare%20for%20Noah%20Brandt%27s%20second%20visit%3F"><span class="lg lg-5" aria-hidden="true">W</span><span class="sg-t">What should I prepare for Noah Brandt&#x27;s second visit?</span><span class="sg-k num">16:30</span></a></li><li><a class="sg" href="portfolio-explore.html#q=q1"><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.5a5 5 0 0 1 6 5"/></svg><span class="sg-t">Which buyers visited but have no proposal?</span><span class="sg-k num">now</span></a></li><li><a class="sg" href="portfolio-explore.html#q=none&amp;t=Summarize%20this%20morning%27s%20visit%20with%20Camila%20Reyes"><span class="lg lg-3" aria-hidden="true">L</span><span class="sg-t">Summarize this morning&#x27;s visit with Camila Reyes</span><span class="sg-k num">10:00</span></a></li><li><a class="sg" href="portfolio-explore.html#q=q3"><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.5a5 5 0 0 1 6 5"/></svg><span class="sg-t">What closes this month?</span><span class="sg-k num">April</span></a></li></ul>
+  </section>
+</section>
+
+<div class="strip" role="group" aria-label="This week in numbers">
+  <div class="st"><span class="v">12</span><span class="l">visits this week · <b>9</b> last week</span></div>
+  <div class="st"><span class="v">2</span><span class="l">proposals sent</span></div>
+  <div class="st"><span class="v">1</span><span class="l">reservation accepted</span></div>
+  <div class="st"><span class="v">1</span><span class="l">signed · $615k</span></div>
+  <div class="st"><span class="v na">no target</span><span class="l">April target not set in the CRM</span></div>
+</div>
+
+<section class="pn" aria-labelledby="h-agenda">
+  <div class="pn-h"><h2 id="h-agenda">Today</h2><span class="pn-n">4</span><span class="pn-x"><span class="src">calendar and visit log [1]</span></span></div>
+  <ul class="ag"><li class="ag-i done"><span class="wh"><b class="num">10:00</b><small>visit</small></span><span><span class="tt">Camila Reyes <span class="ch ch-ok">done</span></span><span class="ds"><span class="lg lg-3" aria-hidden="true">L</span>Linden Park Residences, garden unit 2 · with her parents</span></span></li><li class="ag-i done"><span class="wh"><b class="num">14:30</b><small>call</small></span><span><span class="tt">Beatriz Nunes <span class="ch ch-ok">done</span></span><span class="ds"><span class="lg lg-2" aria-hidden="true">R</span>Riverside 48, apt 5B · the counter</span></span></li><li class="ag-i next"><span class="wh"><b class="num">16:30</b><small>visit</small></span><span><span class="tt">Noah Brandt <span class="ch ch-info">next</span></span><span class="ds"><span class="lg lg-5" aria-hidden="true">W</span>Westfield Heights, house 14 · second visit, bring the roof inspection</span></span></li><li class="ag-i later"><span class="wh"><b class="num">17:30</b><small>call</small></span><span><span class="tt">Developer call <span class="ch ch-neu">later</span></span><span class="ds"><span class="lg lg-3" aria-hidden="true">L</span>Linden Park Residences, garden unit 2 · developer, proposal P-5</span></span></li></ul>
+</section>
+
+<section class="pn" id="priorities" aria-labelledby="h-pr">
+  <div class="pn-h"><h2 id="h-pr">Priorities</h2><span class="pn-n hot">5</span><span class="pn-x"><span class="src">proposed by the assistant at 07:40; nothing is written until you approve</span></span></div>
+  <ol class="al"><li class="al-r" id="pr-0"><div class="al-m"><span class="ch ch-lvl l1">Urgent</span><span class="dl">act today</span></div><div class="al-b"><b><a class="lkn" href="buyer-record.html">Ingrid Olsen</a></b><span class="ac"><span class="lg lg-2" aria-hidden="true">R</span>Riverside 48, apt 5B</span></div><div class="al-w"><span class="rasc">The owner&#x27;s counter at $525,000 has waited 8 days; Ingrid came back on Sunday to check the noise</span><span class="src">proposal P-3, CRM [2]</span></div><div class="al-a"><button type="button" class="b b-p b-sm" data-pr="0" data-task="Call, due 13 April: the counter and the Sunday visit">Create task</button><a class="b b-t b-sm" href="buyer-record.html">Open</a><span class="al-st" id="pr-st-0" hidden></span></div></li><li class="al-r" id="pr-1"><div class="al-m"><span class="ch ch-lvl l2">Important</span><span class="dl">act this week</span></div><div class="al-b"><b><a class="lkn" href="buyer-record.html">Helena Marques</a></b><span class="ac"><span class="lg lg-2" aria-hidden="true">N</span>Northgate Towers, unit 1204</span></div><div class="al-w"><span class="rasc">Two visits, asked about financing twice, no proposal; send the simulation</span><span class="src">visit of 6 April, 10:00 [1]</span></div><div class="al-a"><button type="button" class="b b-p b-sm" data-pr="1" data-task="Email, due 14 April: financing simulation, unit 1204, 2027 delivery">Create task</button><a class="b b-t b-sm" href="buyer-record.html">Open</a><span class="al-st" id="pr-st-1" hidden></span></div></li><li class="al-r" id="pr-2"><div class="al-m"><span class="ch ch-lvl l2">Important</span><span class="dl">act this week</span></div><div class="al-b"><b><a class="lkn" href="buyer-record.html">Priya Nair</a></b><span class="ac"><span class="lg lg-4" aria-hidden="true">O</span>Old Harbor Lofts, loft 3</span></div><div class="al-w"><span class="rasc">Condo fees requested on 9 April, not sent; the second visit waits on them</span><span class="src">visit of 9 April, 14:00 [1]</span></div><div class="al-a"><button type="button" class="b b-p b-sm" data-pr="2" data-task="Email, overdue since 9 April: condo fees and reserve fund statement">Create task</button><a class="b b-t b-sm" href="buyer-record.html">Open</a><span class="al-st" id="pr-st-2" hidden></span></div></li><li class="al-r" id="pr-3"><div class="al-m"><span class="ch ch-lvl l3">Keep warm</span><span class="dl">this month</span></div><div class="al-b"><b><a class="lkn" href="buyer-record.html">Mateo Rossi</a></b><span class="ac"><span class="lg lg-4" aria-hidden="true">M</span>Mill District Flats, unit 302</span></div><div class="al-w"><span class="rasc">17 days without contact after one visit; continue or close</span><span class="src">visit of 27 March, 11:30 [1]</span></div><div class="al-a"><button type="button" class="b b-p b-sm" data-pr="3" data-task="WhatsApp, due 14 April: continue or close">Create task</button><a class="b b-t b-sm" href="buyer-record.html">Open</a><span class="al-st" id="pr-st-3" hidden></span></div></li><li class="al-r" id="pr-4"><div class="al-m"><span class="ch ch-lvl l4">Build the future</span><span class="dl">when the owner answers</span></div><div class="al-b"><b><a class="lkn" href="buyer-record.html">Samuel Okafor</a></b><span class="ac"><span class="lg lg-5" aria-hidden="true">W</span>Westfield Heights, house 14</span></div><div class="al-w"><span class="rasc">Price review for house 14: 140 days, 2 visits, comparables below the asking price</span><span class="src">listings file, 13 April [4]</span></div><div class="al-a"><button type="button" class="b b-p b-sm" data-pr="4" data-task="Meeting, no date: price review with comparables">Create task</button><a class="b b-t b-sm" href="buyer-record.html">Open</a><span class="al-st" id="pr-st-4" hidden></span></div></li></ol>
+  <div class="al-foot"><span class="t3">Level: Urgent today, Important this week, Keep warm this month, Build the future when the other side answers. The level comes from the days without contact and the stage, both in the CRM [2].</span></div>
+</section>
+
+<section class="pn" id="tasks" aria-labelledby="h-tk">
+  <div class="pn-h"><h2 id="h-tk">Tasks</h2><span class="pn-n">7</span><span class="pn-x"><span class="t3">2 overdue · 3 for today</span></span></div>
+  <ol class="ag tk"><li class="tk-r" id="tk-T-1"><div class="wh "><small>today</small></div><div><div class="tt"><span class="ch ch-neu">Call</span>First call with Lucas Ferreira, new lead from Portal A</div><div class="ds"><span class="lg lg-2" aria-hidden="true">R</span>Riverside 48, apt 5B · <span class="src">portal lead, 12 April 19:40</span></div><div class="ds al-st" id="tk-st-T-1" hidden></div></div><div class="acts"><button type="button" class="b b-p b-sm" data-done="T-1">Complete</button></div></li><li class="tk-r" id="tk-T-2"><div class="wh "><small>today</small></div><div><div class="tt"><span class="ch ch-neu">WhatsApp</span>Reply to Oliver Grant on Portal B about apt 2A</div><div class="ds"><span class="lg lg-4" aria-hidden="true">R</span>Riverside 48, apt 2A · <span class="src">portal lead, 13 April 07:15</span></div><div class="ds al-st" id="tk-st-T-2" hidden></div></div><div class="acts"><button type="button" class="b b-p b-sm" data-done="T-2">Complete</button></div></li><li class="tk-r" id="tk-T-3"><div class="wh late"><small>overdue 4 d</small></div><div><div class="tt"><span class="ch ch-neu">Email</span>Condo fees and reserve fund statement for loft 3 to Priya Nair</div><div class="ds"><span class="lg lg-4" aria-hidden="true">O</span>Old Harbor Lofts, loft 3 · <span class="src">visit of 9 April</span></div><div class="ds al-st" id="tk-st-T-3" hidden></div></div><div class="acts"><button type="button" class="b b-p b-sm" data-done="T-3">Complete</button></div></li><li class="tk-r" id="tk-T-4"><div class="wh "><small>due 15 Apr</small></div><div><div class="tt"><span class="ch ch-neu">Document</span>Collect Tomas Weber&#x27;s reservation documents</div><div class="ds"><span class="lg lg-2" aria-hidden="true">L</span>Linden Park Residences, penthouse A · <span class="src">proposal P-2</span></div><div class="ds al-st" id="tk-st-T-4" hidden></div></div><div class="acts"><button type="button" class="b b-p b-sm" data-done="T-4">Complete</button></div></li><li class="tk-r" id="tk-T-5"><div class="wh late"><small>overdue 1 d</small></div><div><div class="tt"><span class="ch ch-neu">Call</span>Beatriz Nunes: does the counter at $525,000 stand?</div><div class="ds"><span class="lg lg-2" aria-hidden="true">R</span>Riverside 48, apt 5B · <span class="src">proposal P-3</span></div><div class="ds al-st" id="tk-st-T-5" hidden></div></div><div class="acts"><button type="button" class="b b-p b-sm" data-done="T-5">Complete</button></div></li><li class="tk-r" id="tk-T-6"><div class="wh "><small>due 14 Apr</small></div><div><div class="tt"><span class="ch ch-neu">Email</span>Ask the developer for an answer on Rafael Duarte&#x27;s proposal</div><div class="ds"><span class="lg lg-4" aria-hidden="true">N</span>Northgate Towers, unit 807 · <span class="src">proposal P-1</span></div><div class="ds al-st" id="tk-st-T-6" hidden></div></div><div class="acts"><button type="button" class="b b-p b-sm" data-done="T-6">Complete</button></div></li><li class="tk-r" id="tk-T-7"><div class="wh "><small>today</small></div><div><div class="tt"><span class="ch ch-neu">Visit</span>Confirm the second visit with Noah Brandt, house 14, 16:30</div><div class="ds"><span class="lg lg-5" aria-hidden="true">W</span>Westfield Heights, house 14 · <span class="src">agenda</span></div><div class="ds al-st" id="tk-st-T-7" hidden></div></div><div class="acts"><button type="button" class="b b-p b-sm" data-done="T-7">Complete</button></div></li></ol>
+</section>
+
+<section class="pn" aria-labelledby="h-fc">
+  <div class="pn-h"><h2 id="h-fc">Forecast, April 2026</h2><span class="pn-x"><span class="src">CRM [2] · values are the proposal amounts, not estimates</span></span></div>
+  <div class="strip in-card" role="group" aria-label="Forecast by stage"><div class="st"><span class="v">6</span><span class="l">visiting · no value yet</span></div><div class="st"><span class="v">3</span><span class="l">proposal out · $1.7M</span></div><div class="st"><span class="v">1</span><span class="l">reservation · $1.2M</span></div><div class="st"><span class="v">1</span><span class="l">signed · $615k</span></div></div>
+</section>
+
+    </main>
+  </div>
+</div>
+
+<footer class="site-footer"><p>Fictional brokerage, people and numbers.</p><p><a href="index.html">Gallery</a> · <a href="https://github.com/Benyoumen/no-slop-design">GitHub repository</a></p></footer>
+<script>
+(function(){
+  var btn=document.getElementById('umenubtn'), pop=document.getElementById('umenu-l'), menu=document.getElementById('umenu');
+  if(btn&&pop){
+    function close(){pop.hidden=true;btn.setAttribute('aria-expanded','false');menu.classList.remove('open');}
+    btn.addEventListener('click',function(){var open=pop.hidden;pop.hidden=!open;btn.setAttribute('aria-expanded',open?'true':'false');menu.classList.toggle('open',open);if(open){pop.querySelector('button').focus();}});
+    document.addEventListener('keydown',function(ev){if(ev.key==='Escape'&&!pop.hidden){close();btn.focus();}});
+    document.addEventListener('click',function(ev){if(!menu.contains(ev.target))close();});
+    pop.querySelectorAll('.pi').forEach(function(p){p.addEventListener('click',function(){close();receipt('Not in this mockup','Preferences and Sources are described in the brief.');btn.focus();});});
+  }
+  var lv=document.getElementById('log-visit'); if(lv){lv.addEventListener('click',function(){receipt('Not in this mockup','Logging a visit is a drawer in the next round.');});}
+  var find=document.getElementById('find'); if(find){document.addEventListener('keydown',function(ev){if(ev.key==='/'&&document.activeElement!==find&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){ev.preventDefault();find.focus();}});}
+  var toastTimer=null;
+  window.receipt=function(title,detail,undo){
+    var t=document.getElementById('toast'); if(!t){t=document.createElement('div');t.id='toast';t.className='toast';t.setAttribute('role','status');t.setAttribute('aria-live','polite');document.body.appendChild(t);}
+    t.innerHTML='<span class="tk" aria-hidden="true">&#10003;</span><span class="tx"><b></b><i></i></span>'+(undo?'<button type="button" class="tu">Undo</button>':'')+'<button type="button" class="tx-x" aria-label="Close">&times;</button>';
+    t.querySelector('b').textContent=title; t.querySelector('i').textContent=detail||'';
+    t.classList.add('on'); clearTimeout(toastTimer);
+    var hide=function(){t.classList.remove('on');};
+    t.querySelector('.tx-x').addEventListener('click',hide);
+    if(undo){t.querySelector('.tu').addEventListener('click',function(){undo();hide();});}
+    toastTimer=setTimeout(hide,undo?12000:5000);
+  };
+})();
+
+(function(){
+  var form=document.getElementById('ex-cmp'), input=document.getElementById('ex-in');
+  form.addEventListener('submit',function(ev){ev.preventDefault();var q=input.value.trim()||'Ask about a buyer, a listing or your week';var map={'which buyers visited but have no proposal':'q1','which listings have been on the market for more than 60 days':'q2','what closes this month':'q3'};var k=q.toLowerCase().replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();location.href='portfolio-explore.html#q='+(map[k]||('none&t='+encodeURIComponent(q)));});
+  input.addEventListener('keydown',function(ev){if(ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();form.dispatchEvent(new Event('submit',{cancelable:true}));}});
+  function pad(n){return (n<10?'0':'')+n;}
+  document.querySelectorAll('[data-pr]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var i=b.getAttribute('data-pr'), st=document.getElementById('pr-st-'+i), row=document.getElementById('pr-'+i);
+      var d=new Date(), t=pad(d.getHours())+':'+pad(d.getMinutes());
+      b.hidden=true; st.hidden=false; st.textContent='Task created at '+t;
+      row.classList.add('is-done');
+      receipt('Done · Task created in the CRM',b.getAttribute('data-task'),function(){b.hidden=false;st.hidden=true;row.classList.remove('is-done');b.focus();});
+    });
+  });
+  document.querySelectorAll('[data-done]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=b.getAttribute('data-done'), row=document.getElementById('tk-'+id), st=document.getElementById('tk-st-'+id);
+      var d=new Date(), t=pad(d.getHours())+':'+pad(d.getMinutes());
+      row.classList.add('is-done'); b.hidden=true; st.hidden=false; st.textContent='Completed at '+t+' in the CRM';
+      receipt('Done · Task completed in the CRM',row.querySelector('.tt').textContent.trim(),function(){row.classList.remove('is-done');b.hidden=false;st.hidden=true;b.focus();});
+    });
+  });
+})();
+</script>
+</body>
+</html>

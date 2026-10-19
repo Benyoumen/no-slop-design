@@ -4,7 +4,7 @@
   "reps": [
     { "id": "ana", "name": "Ana", "weekly_meetings": 19, "updated_within_24h": 0.74 },
     { "id": "bruno", "name": "Bruno", "weekly_meetings": 16, "updated_within_24h": 0.38 },
-    { "id": "carla", "name": "Carla", "weekly_meetings": 22, "updated_within_24h": 0.91 },
+    { "id": "carla", "name": "Clara", "weekly_meetings": 22, "updated_within_24h": 0.91 },
     { "id": "diego", "name": "Diego", "weekly_meetings": 14, "updated_within_24h": null }
   ],
   "current_rep": "ana",

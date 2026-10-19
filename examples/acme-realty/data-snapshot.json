@@ -1,0 +1,145 @@
+{
+  "note": "Fictional brokerage, people, listings and numbers. Snapshot frozen on 2026-04-13 at 16:10. A null value means the source has no data; the screens say 'no data' and never show zero in its place.",
+  "snapshot_date": "2026-04-13",
+  "snapshot_time": "16:10",
+  "last_assistant_run": "2026-04-13T07:40:00",
+  "brokerage": "Acme Realty",
+  "city": "Alder Bay",
+  "districts": ["Northgate", "Linden Park", "Riverside", "Old Harbor", "Mill District", "Westfield Heights"],
+  "portals": ["Portal A", "Portal B"],
+  "broker": {"id": "BR-1", "name": "Marina Costa", "first_name": "Marina", "initials": "MC", "role": "Broker, launches and resale"},
+  "listings": [
+    {"id": "L-101", "name": "Northgate Towers, unit 1204", "kind": "launch", "bedrooms": 2, "district": "Northgate", "price": 620000, "days_on_market": 34, "visits": 11, "proposals": 2, "owner": "Northgate Developments", "delivery": "2027"},
+    {"id": "L-102", "name": "Northgate Towers, unit 807", "kind": "launch", "bedrooms": 3, "district": "Northgate", "price": 790000, "days_on_market": 34, "visits": 7, "proposals": 1, "owner": "Northgate Developments", "delivery": "2027"},
+    {"id": "L-103", "name": "Linden Park Residences, garden unit 2", "kind": "launch", "bedrooms": 2, "district": "Linden Park", "price": 455000, "days_on_market": 21, "visits": 9, "proposals": 1, "owner": "Linden Living", "delivery": "2028"},
+    {"id": "L-104", "name": "Riverside 48, apt 5B", "kind": "resale", "bedrooms": 3, "district": "Riverside", "price": 540000, "days_on_market": 67, "visits": 6, "proposals": 1, "owner": "B-13", "delivery": null},
+    {"id": "L-105", "name": "Old Harbor Lofts, loft 3", "kind": "resale", "bedrooms": 2, "district": "Old Harbor", "price": 410000, "days_on_market": 12, "visits": 4, "proposals": 0, "owner": "private owner", "delivery": null},
+    {"id": "L-106", "name": "Mill District Flats, unit 302", "kind": "resale", "bedrooms": 1, "district": "Mill District", "price": 265000, "days_on_market": 95, "visits": 3, "proposals": 0, "owner": "private owner", "delivery": null},
+    {"id": "L-107", "name": "Westfield Heights, house 14", "kind": "resale", "bedrooms": 4, "district": "Westfield Heights", "price": 980000, "days_on_market": 140, "visits": 2, "proposals": 0, "owner": "B-14", "delivery": null},
+    {"id": "L-108", "name": "Linden Park Residences, penthouse A", "kind": "launch", "bedrooms": 3, "district": "Linden Park", "price": 1250000, "days_on_market": 21, "visits": 5, "proposals": 1, "owner": "Linden Living", "delivery": "2028"},
+    {"id": "L-109", "name": "Riverside 48, apt 2A", "kind": "resale", "bedrooms": 2, "district": "Riverside", "price": null, "days_on_market": 5, "visits": 1, "proposals": 0, "owner": "B-14", "delivery": null}
+  ],
+  "buyers": [
+    {"id": "B-01", "name": "Helena Marques", "kind": "buyer", "stage": "visit", "source": "Portal A", "since": "2026-03-02", "budget": 650000, "district": "Northgate", "looking_for": "2 bed, launch, delivery 2027", "phone": "(555) 010-0101", "email": "helena.marques@example.com", "last_contact": "2026-04-10", "last_contact_kind": "visit, unit 1204", "next_step": null, "interested_in": ["L-101"], "visits": 2, "open_proposals": 0, "suggestion": "S-1", "fields_filled": 6, "fields_total": 8, "missing_fields": ["financing pre-approval", "decision date"]},
+    {"id": "B-02", "name": "Rafael Duarte", "kind": "buyer", "stage": "proposal", "source": "Portal B", "since": "2026-02-18", "budget": 800000, "district": "Northgate", "looking_for": "3 bed, launch", "phone": "(555) 010-0102", "email": "rafael.duarte@example.com", "last_contact": "2026-04-11", "last_contact_kind": "proposal sent, unit 807", "next_step": {"text": "Developer answers by 15 April", "date": "2026-04-15"}, "interested_in": ["L-102"], "visits": 1, "open_proposals": 1, "suggestion": null, "fields_filled": 8, "fields_total": 8, "missing_fields": []},
+    {"id": "B-03", "name": "Sofia Lind", "kind": "buyer", "stage": "visit", "source": "Referral", "since": "2026-03-20", "budget": null, "district": "Linden Park", "looking_for": "garden unit or penthouse, delivery 2028", "phone": "(555) 010-0103", "email": "sofia.lind@example.com", "last_contact": "2026-04-07", "last_contact_kind": "visit, penthouse A", "next_step": null, "interested_in": ["L-103", "L-108"], "visits": 2, "open_proposals": 0, "suggestion": "S-2", "fields_filled": 5, "fields_total": 8, "missing_fields": ["budget", "financing pre-approval", "decision date"]},
+    {"id": "B-04", "name": "Tomas Weber", "kind": "buyer", "stage": "reservation", "source": "Portal A", "since": "2026-01-25", "budget": 1300000, "district": "Linden Park", "looking_for": "penthouse", "phone": "(555) 010-0104", "email": "tomas.weber@example.com", "last_contact": "2026-04-12", "last_contact_kind": "call, signing date", "next_step": {"text": "Reservation contract signing", "date": "2026-04-16"}, "interested_in": ["L-108"], "visits": 3, "open_proposals": 1, "suggestion": null, "fields_filled": 8, "fields_total": 8, "missing_fields": []},
+    {"id": "B-05", "name": "Priya Nair", "kind": "buyer", "stage": "visit", "source": "Portal B", "since": "2026-03-28", "budget": 420000, "district": "Old Harbor", "looking_for": "loft, 2 bed", "phone": "(555) 010-0105", "email": "priya.nair@example.com", "last_contact": "2026-04-09", "last_contact_kind": "visit, loft 3", "next_step": {"text": "Send condo fees and reserve fund statement", "date": "2026-04-09"}, "interested_in": ["L-105"], "visits": 1, "open_proposals": 0, "suggestion": "S-3", "fields_filled": 7, "fields_total": 8, "missing_fields": ["decision date"]},
+    {"id": "B-06", "name": "Lucas Ferreira", "kind": "buyer", "stage": "lead", "source": "Portal A", "since": "2026-04-12", "budget": 550000, "district": "Riverside", "looking_for": "3 bed, resale", "phone": "(555) 010-0106", "email": "lucas.ferreira@example.com", "last_contact": "2026-04-12", "last_contact_kind": "portal message", "next_step": {"text": "First call", "date": "2026-04-13"}, "interested_in": ["L-104"], "visits": 0, "open_proposals": 0, "suggestion": null, "fields_filled": 4, "fields_total": 8, "missing_fields": ["financing pre-approval", "decision date", "household", "current home"]},
+    {"id": "B-07", "name": "Ingrid Olsen", "kind": "buyer", "stage": "proposal", "source": "Referral", "since": "2026-02-02", "budget": 560000, "district": "Riverside", "looking_for": "3 bed, resale, quiet street", "phone": "(555) 010-0107", "email": "ingrid.olsen@example.com", "last_contact": "2026-04-12", "last_contact_kind": "visit, apt 5B", "next_step": null, "interested_in": ["L-104"], "visits": 2, "open_proposals": 1, "suggestion": "S-4", "fields_filled": 8, "fields_total": 8, "missing_fields": []},
+    {"id": "B-08", "name": "Mateo Rossi", "kind": "buyer", "stage": "visit", "source": "Portal B", "since": "2026-03-15", "budget": 300000, "district": "Mill District", "looking_for": "1 bed, resale", "phone": "(555) 010-0108", "email": "mateo.rossi@example.com", "last_contact": "2026-03-27", "last_contact_kind": "visit, unit 302", "next_step": null, "interested_in": ["L-106"], "visits": 1, "open_proposals": 0, "suggestion": "S-5", "fields_filled": 6, "fields_total": 8, "missing_fields": ["financing pre-approval", "decision date"]},
+    {"id": "B-09", "name": "Yara Haddad", "kind": "buyer", "stage": "signed", "source": "Portal A", "since": "2025-12-10", "budget": 640000, "district": "Northgate", "looking_for": "2 bed, launch", "phone": "(555) 010-0109", "email": "yara.haddad@example.com", "last_contact": "2026-04-08", "last_contact_kind": "signing, unit 1502", "next_step": {"text": "Deliver the signed copies to the developer", "date": "2026-04-14"}, "interested_in": [], "visits": 4, "open_proposals": 0, "suggestion": null, "fields_filled": 8, "fields_total": 8, "missing_fields": []},
+    {"id": "B-10", "name": "Noah Brandt", "kind": "buyer", "stage": "visit", "source": "Portal B", "since": "2026-04-01", "budget": 1000000, "district": "Westfield Heights", "looking_for": "house, 4 bed", "phone": "(555) 010-0110", "email": "noah.brandt@example.com", "last_contact": "2026-04-11", "last_contact_kind": "visit, house 14", "next_step": {"text": "Second visit", "date": "2026-04-13"}, "interested_in": ["L-107"], "visits": 1, "open_proposals": 0, "suggestion": null, "fields_filled": 7, "fields_total": 8, "missing_fields": ["decision date"]},
+    {"id": "B-11", "name": "Camila Reyes", "kind": "buyer", "stage": "proposal", "source": "Portal A", "since": "2026-03-05", "budget": 470000, "district": "Linden Park", "looking_for": "garden unit", "phone": "(555) 010-0111", "email": "camila.reyes@example.com", "last_contact": "2026-04-13", "last_contact_kind": "visit, garden unit 2, with her parents", "next_step": {"text": "Developer answers by 14 April", "date": "2026-04-14"}, "interested_in": ["L-103"], "visits": 2, "open_proposals": 1, "suggestion": null, "fields_filled": 8, "fields_total": 8, "missing_fields": []},
+    {"id": "B-12", "name": "Oliver Grant", "kind": "buyer", "stage": "lead", "source": "Portal B", "since": "2026-04-13", "budget": null, "district": "Riverside", "looking_for": "2 bed, resale", "phone": null, "email": "oliver.grant@example.com", "last_contact": "2026-04-13", "last_contact_kind": "portal message, 07:15", "next_step": {"text": "Reply on the portal", "date": "2026-04-13"}, "interested_in": ["L-109"], "visits": 0, "open_proposals": 0, "suggestion": null, "fields_filled": 3, "fields_total": 8, "missing_fields": ["budget", "phone", "financing pre-approval", "decision date", "household"]},
+    {"id": "B-13", "name": "Beatriz Nunes", "kind": "owner", "stage": "owner", "source": "Walk-in", "since": "2026-02-05", "budget": null, "district": "Riverside", "looking_for": "selling apt 5B", "phone": "(555) 010-0113", "email": "beatriz.nunes@example.com", "last_contact": "2026-04-06", "last_contact_kind": "call, the counter", "next_step": {"text": "Answer the counter question", "date": "2026-04-12"}, "interested_in": ["L-104"], "visits": 0, "open_proposals": 1, "suggestion": null, "fields_filled": 6, "fields_total": 6, "missing_fields": []},
+    {"id": "B-14", "name": "Samuel Okafor", "kind": "owner", "stage": "owner", "source": "Referral", "since": "2025-11-24", "budget": null, "district": "Westfield Heights", "looking_for": "selling house 14 and apt 2A", "phone": "(555) 010-0114", "email": "samuel.okafor@example.com", "last_contact": "2026-03-30", "last_contact_kind": "email, listing of apt 2A", "next_step": {"text": "Price review meeting", "date": null}, "interested_in": ["L-107", "L-109"], "visits": 0, "open_proposals": 0, "suggestion": "S-6", "fields_filled": 6, "fields_total": 6, "missing_fields": []}
+  ],
+  "visits": [
+    {"id": "V-01", "date": "2026-04-06", "time": "10:00", "buyer": "B-01", "listing": "L-101", "outcome": "liked", "feedback": "Asked about the financing simulation for the 2027 delivery", "follow_up_sent": false},
+    {"id": "V-02", "date": "2026-04-06", "time": "15:00", "buyer": "B-03", "listing": "L-103", "outcome": "undecided", "feedback": "Garden smaller than expected; wants to see the penthouse too", "follow_up_sent": true},
+    {"id": "V-03", "date": "2026-04-07", "time": "11:00", "buyer": "B-03", "listing": "L-108", "outcome": "liked", "feedback": "Said the penthouse is above budget; did not say the budget", "follow_up_sent": false},
+    {"id": "V-04", "date": "2026-04-07", "time": "16:30", "buyer": "B-07", "listing": "L-104", "outcome": "liked", "feedback": "Second visit, measured the kitchen", "follow_up_sent": true},
+    {"id": "V-05", "date": "2026-04-08", "time": "09:30", "buyer": "B-11", "listing": "L-103", "outcome": "liked", "feedback": "Wants to decide this month", "follow_up_sent": true},
+    {"id": "V-06", "date": "2026-04-09", "time": "14:00", "buyer": "B-05", "listing": "L-105", "outcome": "undecided", "feedback": "Asked for the condo fees and the building's reserve fund statement", "follow_up_sent": false},
+    {"id": "V-07", "date": "2026-04-10", "time": "10:30", "buyer": "B-01", "listing": "L-101", "outcome": "liked", "feedback": "Second visit, with her partner; asked again about financing", "follow_up_sent": false},
+    {"id": "V-08", "date": "2026-04-10", "time": "17:00", "buyer": "B-04", "listing": "L-108", "outcome": "liked", "feedback": "Third visit; reservation agreed", "follow_up_sent": true},
+    {"id": "V-09", "date": "2026-04-11", "time": "11:00", "buyer": "B-10", "listing": "L-107", "outcome": "undecided", "feedback": "Liked the house; worried about the roof's age", "follow_up_sent": true},
+    {"id": "V-10", "date": "2026-04-11", "time": "15:30", "buyer": "B-02", "listing": "L-102", "outcome": "liked", "feedback": "Proposal sent the same day", "follow_up_sent": true},
+    {"id": "V-11", "date": "2026-04-12", "time": "10:00", "buyer": "B-07", "listing": "L-104", "outcome": "undecided", "feedback": "Came back to check the street noise on a Sunday", "follow_up_sent": false},
+    {"id": "V-12", "date": "2026-04-13", "time": "10:00", "buyer": "B-11", "listing": "L-103", "outcome": "liked", "feedback": "Showed the unit to her parents; they asked about the delivery date", "follow_up_sent": false}
+  ],
+  "earlier_visits": [
+    {"id": "V-E1", "date": "2026-03-27", "time": "11:30", "buyer": "B-08", "listing": "L-106", "outcome": "undecided", "feedback": "Would like a balcony; unit 302 has none", "follow_up_sent": true}
+  ],
+  "proposals": [
+    {"id": "P-1", "buyer": "B-02", "listing": "L-102", "amount": 760000, "status": "with the developer", "sent": "2026-04-11", "days_open": 2, "counter": null},
+    {"id": "P-2", "buyer": "B-04", "listing": "L-108", "amount": 1200000, "status": "accepted, signing 16 April", "sent": "2026-04-03", "days_open": 10, "counter": null},
+    {"id": "P-3", "buyer": "B-07", "listing": "L-104", "amount": 505000, "status": "countered by the owner", "sent": "2026-04-05", "days_open": 8, "counter": 525000},
+    {"id": "P-4", "buyer": "B-09", "listing": null, "listing_name": "Northgate Towers, unit 1502", "amount": 615000, "status": "signed 8 April", "sent": "2026-03-25", "days_open": 0, "counter": null},
+    {"id": "P-5", "buyer": "B-11", "listing": "L-103", "amount": 440000, "status": "with the developer", "sent": "2026-04-12", "days_open": 1, "counter": null}
+  ],
+  "leads": [
+    {"id": "LD-1", "portal": "Portal A", "date": "2026-04-12", "time": "19:40", "buyer": "B-06", "listing": "L-104", "status": "contacted"},
+    {"id": "LD-2", "portal": "Portal B", "date": "2026-04-13", "time": "07:15", "buyer": "B-12", "listing": "L-109", "status": "new"},
+    {"id": "LD-3", "portal": "Portal A", "date": "2026-04-13", "time": "06:50", "buyer": null, "listing": "L-101", "status": "new, name withheld by the portal until the first reply"},
+    {"id": "LD-4", "portal": "Portal B", "date": "2026-04-11", "time": "21:05", "buyer": "B-10", "listing": "L-107", "status": "contacted"}
+  ],
+  "suggestions": [
+    {"id": "S-1", "buyer": "B-01", "kind": "follow-up", "title": "Send the financing simulation for unit 1204 and propose a proposal meeting", "writes": [{"object": "Task", "fields": "Email, due 14 April: financing simulation, unit 1204, 2027 delivery"}, {"object": "Note on the buyer", "fields": "Asked about financing on both visits; no simulation on record"}], "evidence": [{"quote": "Asked about the financing simulation for the 2027 delivery", "source": "visit of 6 April, 10:00", "ref": 1}, {"quote": "Second visit, with her partner; asked again about financing", "source": "visit of 10 April, 10:30", "ref": 1}, {"quote": "No proposal in 9 days since the first visit; no simulation sent", "source": "CRM buyer record, read 07:40", "ref": 2}], "never": "send anything to the buyer, change her budget, or create a proposal"},
+    {"id": "S-2", "buyer": "B-03", "kind": "missing fact", "title": "Ask Sofia for her budget and send the payment plan of garden unit 2", "writes": [{"object": "Task", "fields": "Call, due 14 April: budget and payment plan"}], "evidence": [{"quote": "Said the penthouse is above budget; did not say the budget", "source": "visit of 7 April, 11:00", "ref": 1}, {"quote": "Budget field empty in the CRM", "source": "CRM buyer record, read 07:40", "ref": 2}], "never": "estimate the budget or write a number in the field"},
+    {"id": "S-3", "buyer": "B-05", "kind": "follow-up", "title": "Send Priya the condo fees and the reserve fund statement for loft 3, then propose a second visit", "writes": [{"object": "Task", "fields": "Email, overdue since 9 April: condo fees and reserve fund statement"}], "evidence": [{"quote": "Asked for the condo fees and the building's reserve fund statement", "source": "visit of 9 April, 14:00", "ref": 1}, {"quote": "Documents requested on 9 April, not sent", "source": "CRM task list, read 07:40", "ref": 2}], "never": "send the documents itself"},
+    {"id": "S-4", "buyer": "B-07", "kind": "proposal", "title": "Call Ingrid with the owner's counter at $525,000; the counter has waited 8 days", "writes": [{"object": "Task", "fields": "Call, due 13 April: the counter and the Sunday visit"}], "evidence": [{"quote": "Countered by the owner at $525,000 on 5 April", "source": "proposal P-3, CRM", "ref": 2}, {"quote": "Came back to check the street noise on a Sunday", "source": "visit of 12 April, 10:00", "ref": 1}], "never": "answer the counter on the buyer's behalf"},
+    {"id": "S-5", "buyer": "B-08", "kind": "re-engage", "title": "Mateo: 17 days without contact after one visit; ask whether the 1-bed search continues, or close the lead", "writes": [{"object": "Task", "fields": "WhatsApp, due 14 April: continue or close"}], "evidence": [{"quote": "Would like a balcony; unit 302 has none", "source": "visit of 27 March, 11:30", "ref": 1}, {"quote": "No answer to the message of 2 April", "source": "CRM buyer record, read 07:40", "ref": 2}], "never": "close the lead itself"},
+    {"id": "S-6", "buyer": "B-14", "kind": "price review", "title": "Propose a price review for house 14: 140 days on market, 2 visits, 3 comparable sales below the asking price", "writes": [{"object": "Task", "fields": "Meeting, no date: price review with comparables"}], "evidence": [{"quote": "140 days on market, 2 visits, no proposal", "source": "listings file, 13 April", "ref": 4}, {"quote": "Three sales in Westfield Heights in the last 90 days between $880,000 and $925,000", "source": "listings file, comparables table", "ref": 4}, {"quote": "Liked the house; worried about the roof's age", "source": "visit of 11 April, 11:00", "ref": 1}], "never": "change the asking price or contact the owner"}
+  ],
+  "tasks": [
+    {"id": "T-1", "kind": "Call", "subject": "First call with Lucas Ferreira, new lead from Portal A", "buyer": "B-06", "listing": "L-104", "due": "2026-04-13", "overdue_days": 0, "source": "portal lead, 12 April 19:40"},
+    {"id": "T-2", "kind": "WhatsApp", "subject": "Reply to Oliver Grant on Portal B about apt 2A", "buyer": "B-12", "listing": "L-109", "due": "2026-04-13", "overdue_days": 0, "source": "portal lead, 13 April 07:15"},
+    {"id": "T-3", "kind": "Email", "subject": "Condo fees and reserve fund statement for loft 3 to Priya Nair", "buyer": "B-05", "listing": "L-105", "due": "2026-04-09", "overdue_days": 4, "source": "visit of 9 April"},
+    {"id": "T-4", "kind": "Document", "subject": "Collect Tomas Weber's reservation documents", "buyer": "B-04", "listing": "L-108", "due": "2026-04-15", "overdue_days": 0, "source": "proposal P-2"},
+    {"id": "T-5", "kind": "Call", "subject": "Beatriz Nunes: does the counter at $525,000 stand?", "buyer": "B-13", "listing": "L-104", "due": "2026-04-12", "overdue_days": 1, "source": "proposal P-3"},
+    {"id": "T-6", "kind": "Email", "subject": "Ask the developer for an answer on Rafael Duarte's proposal", "buyer": "B-02", "listing": "L-102", "due": "2026-04-14", "overdue_days": 0, "source": "proposal P-1"},
+    {"id": "T-7", "kind": "Visit", "subject": "Confirm the second visit with Noah Brandt, house 14, 16:30", "buyer": "B-10", "listing": "L-107", "due": "2026-04-13", "overdue_days": 0, "source": "agenda"}
+  ],
+  "agenda": [
+    {"time": "10:00", "kind": "visit", "buyer": "B-11", "listing": "L-103", "status": "done", "note": "with her parents"},
+    {"time": "14:30", "kind": "call", "buyer": "B-13", "listing": "L-104", "status": "done", "note": "the counter"},
+    {"time": "16:30", "kind": "visit", "buyer": "B-10", "listing": "L-107", "status": "next", "note": "second visit, bring the roof inspection"},
+    {"time": "17:30", "kind": "call", "buyer": null, "listing": "L-103", "status": "later", "note": "developer, proposal P-5"}
+  ],
+  "forecast": {"month": "April 2026", "target": null, "stages": [
+    {"stage": "visit", "label": "Visiting", "count": 6, "value": null},
+    {"stage": "proposal", "label": "Proposal out", "count": 3, "value": 1705000},
+    {"stage": "reservation", "label": "Reservation", "count": 1, "value": 1200000},
+    {"stage": "signed", "label": "Signed", "count": 1, "value": 615000}
+  ]},
+  "week": {"iso": "2026-W16", "label": "6 to 12 April", "visits": 12, "visits_prev": 9, "proposals_sent": 2, "reservations": 1, "signed": 1, "signed_value": 615000},
+  "trail": [
+    {"when": "2026-04-13 07:40", "what": "Read the portfolio: 14 people, 9 listings, 4 portal leads, 12 visits", "buyer": "portfolio", "approved_by": "no approval needed, read only", "undone": false},
+    {"when": "2026-04-12 18:05", "what": "Task created: first call with Lucas Ferreira", "buyer": "Lucas Ferreira", "approved_by": "Marina Costa", "undone": false},
+    {"when": "2026-04-10 12:20", "what": "Note added: asked about financing on both visits", "buyer": "Helena Marques", "approved_by": "Marina Costa", "undone": false},
+    {"when": "2026-04-08 09:10", "what": "Proposed a price review for house 14", "buyer": "Samuel Okafor", "approved_by": "not approved yet", "undone": false},
+    {"when": "2026-04-06 17:50", "what": "Task created: confirm the visit with Noah Brandt", "buyer": "Noah Brandt", "approved_by": "Marina Costa", "undone": true}
+  ],
+  "sources": [
+    {"ref": 1, "name": "Visit log", "detail": "12 visits from 6 to 13 April, logged by the broker after each visit"},
+    {"ref": 2, "name": "CRM buyer records", "detail": "14 records, read today at 07:40"},
+    {"ref": 3, "name": "Portal leads export", "detail": "4 leads from Portal A and Portal B, 13 April 07:30"},
+    {"ref": 4, "name": "Listings file", "detail": "9 listings, prices from the developers' tables and the owners' instructions, comparables from the last 90 days"}
+  ],
+  "explore": [
+    {"id": "q1", "question": "Which buyers visited but have no proposal?", "verdict": "Six buyers visited in the last 14 days and have no proposal. Three are ready for one; three are missing a fact first.", "findings": [
+      {"text": "Helena Marques, unit 1204: two visits on 6 and 10 April, asked about financing both times; no proposal, no simulation sent.", "refs": [1, 2]},
+      {"text": "Sofia Lind, garden unit 2 and penthouse A, 6 and 7 April: said the penthouse is above budget; the budget is not in the CRM.", "refs": [1, 2]},
+      {"text": "Priya Nair, loft 3, 9 April: asked for the condo fees; the documents were not sent.", "refs": [1, 2]},
+      {"text": "Noah Brandt, house 14, 11 April: second visit on the agenda today at 16:30.", "refs": [1]},
+      {"text": "Camila Reyes is not on this list: her proposal for garden unit 2 is with the developer.", "refs": [2]},
+      {"text": "Mateo Rossi, unit 302: visited on 27 March, outside the 14-day window, and 17 days without contact.", "refs": [1, 2]}
+    ], "open": "Budgets for Sofia Lind and Oliver Grant are empty in the CRM. The assistant does not estimate them.", "confidence": null, "actions": [{"label": "Create 3 follow-up tasks", "primary": true}, {"label": "Open the buyer list", "primary": false}]},
+    {"id": "q2", "question": "Which listings have been on the market for more than 60 days?", "verdict": "Three listings: two resale apartments and one house, 302 days on market between them.", "findings": [
+      {"text": "Westfield Heights, house 14: 140 days, 2 visits, no proposal. A price review was proposed on 8 April and has not been answered.", "refs": [4, 1]},
+      {"text": "Mill District Flats, unit 302: 95 days, 3 visits, the last on 27 March.", "refs": [4, 1]},
+      {"text": "Riverside 48, apt 5B: 67 days, 6 visits, one proposal countered by the owner on 5 April.", "refs": [4, 2]}
+    ], "open": "The owner of house 14 has not answered the price review. The comparables come from the listings file, not from the registry.", "confidence": null, "actions": [{"label": "Open the listings", "primary": true}, {"label": "Open the price review", "primary": false}]},
+    {"id": "q3", "question": "What closes this month?", "verdict": "One signed, one reservation signing on 16 April, two proposals with developers: $3.0M if all four close.", "findings": [
+      {"text": "Yara Haddad signed unit 1502 on 8 April, $615,000.", "refs": [2]},
+      {"text": "Tomas Weber, penthouse A: reservation accepted, signing on 16 April, $1,200,000.", "refs": [2]},
+      {"text": "Rafael Duarte, unit 807: $760,000, the developer answers by 15 April.", "refs": [2]},
+      {"text": "Camila Reyes, garden unit 2: $440,000, sent yesterday.", "refs": [2]}
+    ], "open": "No target is set for April in the CRM, so there is no gap to report.", "confidence": "medium", "confidence_reason": "two of the four depend on a developer's answer", "actions": [{"label": "Open the forecast", "primary": true}, {"label": "Open the proposals", "primary": false}]}
+  ],
+  "home_suggestions": [
+    {"q": "q4", "text": "What should I prepare for Noah Brandt's second visit?", "when": "16:30", "listing": "L-107"},
+    {"q": "q1", "text": "Which buyers visited but have no proposal?", "when": "now", "listing": null},
+    {"q": "q5", "text": "Summarize this morning's visit with Camila Reyes", "when": "10:00", "listing": "L-103"},
+    {"q": "q3", "text": "What closes this month?", "when": "April", "listing": null}
+  ],
+  "priorities": [
+    {"level": "Urgent", "when": "act today", "buyer": "B-07", "listing": "L-104", "text": "The owner's counter at $525,000 has waited 8 days; Ingrid came back on Sunday to check the noise", "suggestion": "S-4", "actions": ["Create task", "Open the buyer"]},
+    {"level": "Important", "when": "act this week", "buyer": "B-01", "listing": "L-101", "text": "Two visits, asked about financing twice, no proposal; send the simulation", "suggestion": "S-1", "actions": ["Create task", "Open the buyer"]},
+    {"level": "Important", "when": "act this week", "buyer": "B-05", "listing": "L-105", "text": "Condo fees requested on 9 April, not sent; the second visit waits on them", "suggestion": "S-3", "actions": ["Create task", "Open the buyer"]},
+    {"level": "Keep warm", "when": "this month", "buyer": "B-08", "listing": "L-106", "text": "17 days without contact after one visit; continue or close", "suggestion": "S-5", "actions": ["Create task", "Open the buyer"]},
+    {"level": "Build the future", "when": "when the owner answers", "buyer": "B-14", "listing": "L-107", "text": "Price review for house 14: 140 days, 2 visits, comparables below the asking price", "suggestion": "S-6", "actions": ["Create task", "Open the owner"]}
+  ]
+}

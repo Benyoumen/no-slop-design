@@ -3,7 +3,8 @@
 .g-head-inner { max-width: 880px; margin: 0 auto; }
 .site-name { font-size: var(--fs-0); font-weight: var(--w-strong); color: var(--ink-70); margin-bottom: var(--sp-3); }
 .g-head h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.1; max-width: 18ch; margin-bottom: var(--sp-4); }
-.lede { font-size: var(--fs-2); max-width: 66ch; margin-bottom: var(--sp-5); }
+.lede { font-size: var(--fs-2); max-width: 66ch; margin-bottom: var(--sp-4); }
+.lede-2 { max-width: 66ch; color: var(--ink-70); margin-bottom: var(--sp-5); }
 .actions { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-bottom: var(--sp-4); }
 .g-body { max-width: 1180px; margin: 0 auto; padding: var(--sp-6) var(--sp-4) 0; }
 .pair { padding: var(--sp-6) 0; border-bottom: 1px solid var(--ink-12); }
@@ -13,12 +14,12 @@
 .pair-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-5); align-items: start; }
 .shot { margin: 0; }
 .preview { position: relative; overflow: hidden; border: 1px solid var(--ink-12); border-radius: var(--radius-2); background: var(--surface); height: 300px; }
-.preview iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 800px; border: 0; transform: scale(0.3); transform-origin: 0 0; pointer-events: none; background: var(--paper); }
+.preview iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 860px; border: 0; transform: scale(0.3); transform-origin: 0 0; pointer-events: none; background: var(--paper); }
 .shot figcaption { margin-top: var(--sp-2); font-size: var(--fs-0); }
 .notice-list { margin-top: var(--sp-5); max-width: 880px; }
 .notice-list h3 { margin-bottom: var(--sp-3); }
 .notice-list ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
-.notice-list li { display: grid; grid-template-columns: 56px 1fr; gap: var(--sp-3); align-items: start; }
+.notice-list li { display: grid; grid-template-columns: 64px 1fr; gap: var(--sp-3); align-items: start; }
 .tell { font-size: var(--fs-0); font-weight: var(--w-strong); color: var(--accent); background: var(--accent-soft); padding: 2px var(--sp-2); border-radius: var(--radius-1); text-align: center; }
 .how { padding: var(--sp-6) 0; max-width: 880px; }
 .how h2 { font-size: var(--fs-3); margin-bottom: var(--sp-4); }
@@ -27,5 +28,5 @@
 .site-footer p { margin: 0 0 var(--sp-1); }
 @media (max-width: 760px) {
   .pair-grid { grid-template-columns: 1fr; }
-  .notice-list li { grid-template-columns: 48px 1fr; }
+  .notice-list li { grid-template-columns: 52px 1fr; }
 }
